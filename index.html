@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head runat = "server">
+<meta http-equiv="Content-Type" content="text/html; charset= utf-8">
+	<title>PokeStore</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript"></script>
+    <script src="../assets/vendedor/JQuery/jquery-3.5.0.min.js"></script>
+    <script type="../assets/vendedor/bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../assets/vendedor/bootstrap/css/bootstrap.min.css">
+	
+	<style type="text/css">		
+
+	.dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    transform: translate3d(10px, 28px, 0px); /* distancia entre menu e btn */
+    top: 0px;
+    left: 0px;
+    will-change: transform;
+	}
+		.dropdown {
+    	display: inline-block; /* deixa o LO do "tamanho do próprio texto" e não da largura inteira da tela*/
+   		list-style: none; /* rita a "bolinha" do LI*/
+	}		
+
+	</style>
+      <script src="../assets/js/app.js"></script>
+</head>
+
+<body style="background-color: #CCD1D1">
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+    <button type="button" class="btn btn-outline-secondary mr-md-3" style="position: absolute; right: 0">
+      <a href="file:///D:/apache-tomcat-9.0.34/webapps/B2WProjetoPokemon/assets/carrinho.html">
+        <img src="img\scart.com.png" width="35" style="filter: invert(100%);"></button>
+      </a>
+
+  <!-- Brand/logo -->
+  		<a class="navbar-brand" href="#">PS</a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+
+    <li class="nav-item dropdown">
+     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+      Fogo
+  	 </a>
+
+      <div class="dropdown-menu" aria-labelledby="navbardrop">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+
+    </li>
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Agua
+  	  </a>
+
+  	 <div class="dropdown-menu" aria-labelledby="navbardrop">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+
+    </li>
+  </ul>
+</nav>
+
+
+
+
+      <form id = "form1" runat = "server">
+          <!-- Cabeçalho da Pagina -->
+          <h1 align="center">PokeStore</h1>
+
+        <div class="container">
+          <div class = "col-md-12">
+            <div id="resultado" class="row">
+
+            </div>
+          </div>
+        </div>
+      </form>
+
+
+
+
+    <!-- chama o arquivo com code js 
+		<script src="../assets/js/app.js"></script> -->
+
+
+</body>
+</html>
